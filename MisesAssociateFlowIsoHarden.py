@@ -120,6 +120,7 @@ class MisesAssociateFlowIsoHarden:
                 self.loadHistoryList.append(np.array(list(self.sig) + list(self.eps) +
                                                      [self.vonMises, self.epsPlastic, self.hardening] +
                                                      list(self.epsPlasticVector) + [self.yieldValue, iteration]))
+
                 deps = (1 - r_mid) * deps
                 self.lastYield = yield_mid
                 # update the trial stress
